@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-material';
+  // title = 'angular-material';
+  // cards = true;
+  // data(value:any) {
+  //   this.cards = value;
+  // }
+  // data2(value:any) {
+  //   this.cards = value;
+  // }
 }
