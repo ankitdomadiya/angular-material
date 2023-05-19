@@ -10,7 +10,13 @@ import { FooterComponent } from './includes/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { ButtonToggleComponent } from './pages/button-toggle/button-toggle.component';
-
+import { BedgeComponent } from './pages/bedge/bedge.component';
+import { BottomSheetComponent } from './pages/bottom-sheet/bottom-sheet.component';
+import { CardComponent } from './pages/card/card.component';
+import { CheckBoxComponent } from './pages/check-box/check-box.component';
+import { ChipsComponent } from './pages/chips/chips.component';
+import { DatepickerComponent } from './pages/datepicker/datepicker.component';
+import { DialogComponent } from './pages/dialog/dialog.component';
 
 
 
@@ -21,7 +27,14 @@ import { ButtonToggleComponent } from './pages/button-toggle/button-toggle.compo
     FooterComponent,
     MainComponent,
     ButtonsComponent,
-    ButtonToggleComponent
+    ButtonToggleComponent,
+    BedgeComponent,
+    BottomSheetComponent,
+    CardComponent,
+    CheckBoxComponent,
+    ChipsComponent,
+    DatepickerComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,

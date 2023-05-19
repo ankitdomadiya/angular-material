@@ -1,0 +1,49 @@
+<div class="container pt-3 pb-3 main mt-3">
+    <div class="row shadow3 ps-5 pe-5 ">
+        <div class="col-12 column m-2">
+            <mat-chip-listbox aria-label="Fish selection">
+                <mat-chip-option>One fish</mat-chip-option>
+              </mat-chip-listbox>
+        </div>
+        <div class="col-12 column m-2">
+            <mat-chip-listbox aria-label="Fish selection">
+                <mat-chip-option>Two fish</mat-chip-option>
+                
+              </mat-chip-listbox>
+        </div>
+        <div class="col-12 column m-2">
+            <mat-chip-listbox aria-label="Fish selection">
+                <mat-chip-option color="accent" selected>Accent fish</mat-chip-option>
+                
+              </mat-chip-listbox>
+        </div>
+        <div class="col-12 column m-2">
+            <mat-chip-listbox aria-label="Fish selection">
+                <mat-chip-option color="warn">Warn fish</mat-chip-option>
+              </mat-chip-listbox>
+        </div>
+    </div>
+</div>
+
+<div class="container main mt-3 p-3 pb-3">
+    <mat-form-field class="example-chip-list column pt-3 pb-3">
+        <mat-label>Favorite Fruits</mat-label>
+        <mat-chip-grid #chipGrid aria-label="Enter fruits">
+            <mat-chip-row *ngFor="let fruit of fruits"
+            (removed)="remove(fruit)"
+            [editable]="true"
+                        (edited)="edit(fruit, $event)"
+                        [aria-description]="'press enter to edit ' + fruit.name">
+                        {{fruit.name}}
+            <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </mat-chip-row>
+        <input class="shadow3 ms-4 me-5 mt-3 mb-3" placeholder="New fruit..."
+        [matChipInputFor]="chipGrid"
+        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        [matChipInputAddOnBlur]="addOnBlur"
+        (matChipInputTokenEnd)="add($event)"/>
+    </mat-chip-grid>
+</mat-form-field>
+</div>

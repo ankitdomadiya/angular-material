@@ -36,8 +36,26 @@ $angular-material-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 @import "./assets/css/partials/_includes";
-
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+
+
+// css shadow for all component
+
+.main{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.column{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.shadow3{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
