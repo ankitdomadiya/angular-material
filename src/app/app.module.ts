@@ -16,7 +16,7 @@ import { CardComponent } from './pages/card/card.component';
 import { CheckBoxComponent } from './pages/check-box/check-box.component';
 import { ChipsComponent } from './pages/chips/chips.component';
 import { DatepickerComponent } from './pages/datepicker/datepicker.component';
-import { DialogComponent } from './pages/dialog/dialog.component';
+import { DividerComponent } from './pages/divider/divider.component';
 
 
 
@@ -34,7 +34,7 @@ import { DialogComponent } from './pages/dialog/dialog.component';
     CheckBoxComponent,
     ChipsComponent,
     DatepickerComponent,
-    DialogComponent,
+    DividerComponent,
   ],
   imports: [
     BrowserModule,

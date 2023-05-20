@@ -9,7 +9,7 @@ import { CardComponent } from './pages/card/card.component';
 import { CheckBoxComponent } from './pages/check-box/check-box.component';
 import { ChipsComponent } from './pages/chips/chips.component';
 import { DatepickerComponent } from './pages/datepicker/datepicker.component';
-import { DialogComponent } from './pages/dialog/dialog.component';
+import { DividerComponent } from './pages/divider/divider.component';
 
 const routes: Routes = [
   {
@@ -48,8 +48,8 @@ const routes: Routes = [
     component:DatepickerComponent
   },
   {
-    path:'dialog',
-    component:DialogComponent
+    path:'divider',
+    component:DividerComponent
   }
 ];
 
